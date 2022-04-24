@@ -17,15 +17,16 @@
         <div id="credits">Photo by Hallie West on upslash</div>
     </div>
     <div class="mainBody">
-        
         <div class="header">
             This is not a real online service!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit,<br>  amet consecteturadipisicing elit.
             Ipsa, est eos aperiam enim rem maxime?
+            <div class="quote">You know you want to.</div>
         </div>
-        <div class="quote">You know you want to.</div>
-            <form action="" method="post">
-                <div class="heading">Let's Do This</div>
+        
+            <form action="" method="post" autocomplete="off">
+                <div class="formWithHead">
+                <div class="heading"><legend>Let's do this!</legend></div>
                 <div class="signupForm">
                 <label for="firstName" id="firstNameLabel">FIRST NAME</label>
                 <label for="lastName" id="lastNameLabel">LAST NAME</label>
@@ -34,15 +35,17 @@
                 <label for="email" id="emailLabel">EMAIL</label>
                 <label for="phoneNumber" id="phoneNumberLabel">PHONE NUMBER</label>
                 <input type="email"  id="emailnput" required>
-                <input type="number"  id="phoneNumberInput" required>
+                <input type="tel"  id="phoneNumberInput" 
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="12"  required>
                 <label for="password" id="passwordLabel">PASSWORD</label>
                 <label for="confirmPassword" id="confirmPasswordLabel">CONFIRM PASSWORD
                 </label>
                 <input type="password"  id="passwordInput" required>
                 <input type="password"  id="confirmPasswordInput" required>
                 </div>
-                <button type="submit">Create Account</button>
-                <div>Already have an account?<a href="">Log in here</a></div>
+                </div>
+                <button type="submit" id="submitbtn">Create Account</button>
+                <div id="logInLink"><br>Already have an account?<a href="">Log in here</a></div>
             </form>
     </div>
 </body>
