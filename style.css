@@ -38,6 +38,11 @@ body{
     height: 100%;
     width: 30%;
 }
+#passwordWarning{
+    color: red;
+    font-size: small;
+    font-style: italic;
+}
 
 input:focus {
     background-color: lightblue;
